@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pathum Youth Forum | Redefining Youth Diplomacy</title>
+  <meta name="description" content="Pathum Youth Forum is a youth-led platform empowering individuals through diplomacy, leadership, and global engagement. Register for Pathum MUN 2026 on 23-24 May." />
+  <meta name="keywords" content="Pathum Youth Forum, Pathum MUN, MUN 2026, Model United Nations, youth diplomacy, leadership" />
+  <meta property="og:title" content="Pathum Youth Forum | Redefining Youth Diplomacy" />
+  <meta property="og:description" content="Empowering young voices through leadership, dialogue, and global engagement." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Pathum Youth Forum Home">
+        <img src="assets/logo.png" alt="Pathum Youth Forum Logo" class="logo-img" />
+        <span class="logo-text">PATHUM<br><small>YOUTH FORUM</small></span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#structure" class="nav-link">What We Do</a></li>
+        <li><a href="#mun2026" class="nav-link">MUN 2026</a></li>
+        <li><a href="#values" class="nav-link">Values</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSecgBXCqPq97auNs6keFWHaC-V4flNeQWOjhZLrCOcxf13GQw/viewform" target="_blank" rel="noopener" class="nav-cta" id="nav-register-btn">Register Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+    <div class="hero-content">
+      <div class="hero-badge reveal-up">
+        <span class="badge-dot"></span>
+        Pathum MUN 2026 &mdash; 23rd&#8211;24th May
+      </div>
+      <h1 class="hero-heading reveal-up delay-1">
+        Pathum<br /><em>Youth Forum</em>
+      </h1>
+      <p class="hero-sub reveal-up delay-2">Redefining Youth Diplomacy</p>
+      <p class="hero-tagline reveal-up delay-3">
+        Empowering young voices through leadership, dialogue, and global engagement.
+      </p>
+      <div class="hero-actions reveal-up delay-4">
+        <a href="#mun2026" class="btn btn-primary" id="explore-mun-btn">Explore Pathum MUN</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSecgBXCqPq97auNs6keFWHaC-V4flNeQWOjhZLrCOcxf13GQw/viewform" target="_blank" rel="noopener" class="btn btn-secondary" id="join-community-btn">Join the Community</a>
+      </div>
+      <div class="hero-scroll-hint reveal-up delay-5">
+        <div class="scroll-dot"></div>
+        <span>Scroll to explore</span>
+      </div>
+    </div>
+    <div class="hero-globe">
+      <div class="globe-ring ring-1"></div>
+      <div class="globe-ring ring-2"></div>
+      <div class="globe-ring ring-3"></div>
+      <div class="globe-core">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="globe-svg">
+          <circle cx="100" cy="100" r="90" fill="none" stroke="rgba(212,160,23,0.3)" stroke-width="1"/>
+          <ellipse cx="100" cy="100" rx="55" ry="90" fill="none" stroke="rgba(212,160,23,0.25)" stroke-width="1"/>
+          <ellipse cx="100" cy="100" rx="90" ry="35" fill="none" stroke="rgba(212,160,23,0.2)" stroke-width="1"/>
+          <line x1="10" y1="100" x2="190" y2="100" stroke="rgba(212,160,23,0.15)" stroke-width="1"/>
+          <line x1="100" y1="10" x2="100" y2="190" stroke="rgba(212,160,23,0.15)" stroke-width="1"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAND -->
+  <section class="stats-band">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item" data-count="2" data-suffix="+ Editions">
+          <span class="stat-number" id="stat-editions">0</span>
+          <span class="stat-label">Editions</span>
+        </div>
+        <div class="stat-item" data-count="2026" data-suffix="">
+          <span class="stat-number" id="stat-year">2026</span>
+          <span class="stat-label">Flagship Year</span>
+        </div>
+        <div class="stat-item" data-count="May 23" data-suffix="">
+          <span class="stat-number stat-text">May 23</span>
+          <span class="stat-label">Next Conference</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number stat-text">100%</span>
+          <span class="stat-label">Youth-Led</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-tag reveal-up">About Us</div>
+      <div class="about-grid">
+        <div class="about-text reveal-up delay-1">
+          <h2 class="section-heading">A pathway built <em>for every young voice</em></h2>
+          <p class="section-body">
+            Pathum Youth Forum is a youth-led platform dedicated to empowering individuals through diplomacy, leadership, and global engagement. Built on the idea of creating a pathway for growth, the forum aims to make opportunities in Model United Nations and policy discourse more accessible, inclusive, and impactful.
+          </p>
+          <div class="founder-card">
+            <div class="founder-avatar" aria-hidden="true">KV</div>
+            <div>
+              <span class="founder-name">Kasturi Vyawahare</span>
+              <span class="founder-title">Founder, Pathum Youth Forum</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual reveal-up delay-2">
+          <div class="path-animation">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" class="path-svg">
+              <defs>
+                <linearGradient id="pathGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" style="stop-color:#6B0000;stop-opacity:0" />
+                  <stop offset="50%" style="stop-color:#D4A017;stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:#F0C040;stop-opacity:0.8" />
+                </linearGradient>
+                <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+                  <polygon points="0 0, 10 3.5, 0 7" fill="#D4A017" />
+                </marker>
+              </defs>
+              <path id="journey-path" d="M 20 250 Q 100 200 150 150 Q 200 100 250 80 Q 300 60 380 30" fill="none" stroke="url(#pathGrad)" stroke-width="3" stroke-linecap="round" marker-end="url(#arrowhead)" />
+              <circle cx="20" cy="250" r="6" fill="#D4A017" class="path-dot" />
+              <circle cx="150" cy="150" r="5" fill="#D4A017" class="path-dot" style="animation-delay:0.3s" />
+              <circle cx="250" cy="80" r="5" fill="#D4A017" class="path-dot" style="animation-delay:0.6s" />
+              <circle cx="380" cy="30" r="8" fill="#F0C040" class="path-dot path-dot-end" style="animation-delay:0.9s" />
+              <text x="10" y="270" fill="rgba(212,160,23,0.7)" font-size="10" font-family="Outfit">Start</text>
+              <text x="365" y="25" fill="rgba(240,192,64,0.9)" font-size="10" font-family="Outfit">Growth</text>
+            </svg>
+            <div class="about-cards-float">
+              <div class="float-card fc-1">Leadership</div>
+              <div class="float-card fc-2">Diplomacy</div>
+              <div class="float-card fc-3">Growth</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISION & MISSION -->
+  <section class="section vision-section" id="vision">
+    <div class="container">
+      <div class="section-tag reveal-up">Vision &amp; Mission</div>
+      <h2 class="section-heading centered reveal-up delay-1">What drives us forward</h2>
+      <div class="vm-grid">
+        <div class="vm-card vision-card reveal-up delay-2">
+          <div class="vm-icon">
+            <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="10" fill="none" stroke="currentColor" stroke-width="2"/><line x1="24" y1="2" x2="24" y2="8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="24" y1="40" x2="24" y2="46" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="2" y1="24" x2="8" y2="24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="40" y1="24" x2="46" y2="24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Vision</h3>
+          <p>To redefine youth diplomacy by making leadership, global dialogue, and opportunity accessible to every young voice.</p>
+        </div>
+        <div class="vm-card mission-card reveal-up delay-3">
+          <div class="vm-icon">
+            <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M8 40 L8 20 L24 8 L40 20 L40 40" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><rect x="18" y="28" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <h3>Mission</h3>
+          <ul class="mission-list">
+            <li>Provide accessible, high-quality MUN experiences</li>
+            <li>Foster confidence, critical thinking, and communication skills</li>
+            <li>Create inclusive opportunities for global dialogue</li>
+            <li>Build a credible and transparent platform for young leaders</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE DO / STRUCTURE -->
+  <section class="section structure-section" id="structure">
+    <div class="container">
+      <div class="section-tag reveal-up">What We Do</div>
+      <h2 class="section-heading centered reveal-up delay-1">Two verticals. One mission.</h2>
+      <p class="section-sub centered reveal-up delay-2">Pathum Youth Forum operates through two core verticals, combining organizational impact with structured diplomatic simulations.</p>
+      <div class="structure-grid">
+        <div class="structure-card reveal-up delay-3" id="struct-org">
+          <div class="struct-num">01</div>
+          <h3>Pathum Youth Forum</h3>
+          <p class="struct-sub">The Organization</p>
+          <p>Focused on youth development through structured programs and community building.</p>
+          <ul class="struct-list">
+            <li>Leadership initiatives</li>
+            <li>Policy discussions</li>
+            <li>Workshops and skill-building programs</li>
+            <li>Youth engagement platforms</li>
+          </ul>
+        </div>
+        <div class="structure-divider" aria-hidden="true">
+          <div class="divider-line"></div>
+          <div class="divider-icon">+</div>
+          <div class="divider-line"></div>
+        </div>
+        <div class="structure-card reveal-up delay-4" id="struct-mun">
+          <div class="struct-num">02</div>
+          <h3>Pathum MUN</h3>
+          <p class="struct-sub">The Conference</p>
+          <p>Focused on delivering structured diplomatic simulations of the highest quality.</p>
+          <ul class="struct-list">
+            <li>Hosting MUN conferences</li>
+            <li>Diplomacy, negotiation &amp; public speaking</li>
+            <li>Structured global simulations</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MUN 2026 -->
+  <section class="section mun-section" id="mun2026">
+    <div class="mun-bg-texture" aria-hidden="true"></div>
+    <div class="container">
+      <div class="section-tag reveal-up">Our Initiatives</div>
+      <h2 class="section-heading centered reveal-up delay-1">Pathum MUN 2026</h2>
+      <div class="mun-date-badge reveal-up delay-2">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="date-icon"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="2"/><line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="8" y1="2" x2="8" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" stroke-width="2"/></svg>
+        23rd &amp; 24th May 2026
+      </div>
+
+      <div class="mun-overview-card reveal-up delay-3">
+        <p>Pathum MUN is the flagship conference designed to provide a high-quality and accessible Model United Nations experience for young delegates. Whether you are stepping into a committee for the first time or building on prior experience, this conference is built around your growth.</p>
+      </div>
+
+      <div class="mun-features-grid">
+        <div class="mun-feature reveal-up delay-1" id="mf-1">
+          <div class="mf-icon">
+            <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M24 4 L44 14 L44 34 L24 44 L4 34 L4 14 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          </div>
+          <h4>Beginner-Friendly</h4>
+          <p>Inclusive environment where every delegate belongs, regardless of experience level.</p>
+        </div>
+        <div class="mun-feature reveal-up delay-2" id="mf-2">
+          <div class="mf-icon">
+            <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="16" r="8" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 44 C8 34 40 34 40 44" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="32" y1="28" x2="40" y2="36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h4>Skill Development</h4>
+          <p>Strong focus on real, transferable skills in diplomacy, rhetoric, and critical thinking.</p>
+        </div>
+        <div class="mun-feature reveal-up delay-3" id="mf-3">
+          <div class="mf-icon">
+            <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="6" width="36" height="36" rx="4" fill="none" stroke="currentColor" stroke-width="2"/><polyline points="16 24 22 30 32 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h4>Professional Execution</h4>
+          <p>Meticulously structured and run with credibility, transparency, and care.</p>
+        </div>
+        <div class="mun-feature reveal-up delay-4" id="mf-4">
+          <div class="mf-icon">
+            <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M24 4 L28 18 L44 18 L31 27 L36 42 L24 33 L12 42 L17 27 L4 18 L20 18 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          </div>
+          <h4>Meaningful Recognition</h4>
+          <p>Certificates, Letters of Recommendation, and awards that reflect your achievement.</p>
+        </div>
+      </div>
+
+      <div class="deliverables-row reveal-up delay-2">
+        <h3 class="deliv-heading">What you take home</h3>
+        <div class="deliv-grid">
+          <div class="deliv-item">
+            <span class="deliv-icon">🎓</span>
+            <span>Certificate</span>
+          </div>
+          <div class="deliv-item">
+            <span class="deliv-icon">📄</span>
+            <span>Letter of Recommendation</span>
+          </div>
+          <div class="deliv-item">
+            <span class="deliv-icon">🏆</span>
+            <span>Awards &amp; Recognition</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="mun-cta-row reveal-up delay-3">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSecgBXCqPq97auNs6keFWHaC-V4flNeQWOjhZLrCOcxf13GQw/viewform" target="_blank" rel="noopener" class="btn btn-primary btn-lg" id="delegate-register-btn">Register as a Delegate</a>
+        <a href="https://forms.gle/uZxjMKKMbVCxU6fe9" target="_blank" rel="noopener" class="btn btn-outline btn-lg" id="secretariat-apply-btn">Apply for Secretariat</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PILOT CONFERENCE -->
+  <section class="section pilot-section" id="pilot">
+    <div class="container">
+      <div class="section-tag reveal-up">Where It All Began</div>
+      <h2 class="section-heading centered reveal-up delay-1">The Pilot Conference</h2>
+      <div class="pilot-date-badge reveal-up delay-2">11th January 2026</div>
+      <div class="pilot-grid">
+        <div class="pilot-impact reveal-up delay-2">
+          <div class="impact-quote">
+            <svg class="quote-mark" viewBox="0 0 40 30" xmlns="http://www.w3.org/2000/svg"><path d="M0 30 Q0 10 15 0 L20 5 Q10 12 10 25 L20 25 L20 30 Z" fill="currentColor"/><path d="M20 30 Q20 10 35 0 L40 5 Q30 12 30 25 L40 25 L40 30 Z" fill="currentColor"/></svg>
+            <p>The pilot conference validated the vision of creating an accessible yet high-quality MUN platform for youth.</p>
+          </div>
+        </div>
+        <div class="pilot-highlights reveal-up delay-3">
+          <h3>Highlights</h3>
+          <ul class="pilot-list">
+            <li><span class="plist-dot"></span>Successful delegate participation across committees</li>
+            <li><span class="plist-dot"></span>Smooth execution of all committee sessions</li>
+            <li><span class="plist-dot"></span>Physical trophies awarded to top performers</li>
+            <li><span class="plist-dot"></span>Certificates and LORs issued to all delegates</li>
+            <li><span class="plist-dot"></span>Overwhelmingly positive delegate testimonials</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY PATHUM -->
+  <section class="section why-section" id="why">
+    <div class="container">
+      <div class="section-tag reveal-up">Why Choose Pathum</div>
+      <h2 class="section-heading centered reveal-up delay-1">Built differently, on purpose</h2>
+      <div class="why-grid">
+        <div class="why-card reveal-up delay-1" id="wc-1">
+          <div class="why-check">&#10003;</div>
+          <p>Designed for both beginners and experienced delegates</p>
+        </div>
+        <div class="why-card reveal-up delay-2" id="wc-2">
+          <div class="why-check">&#10003;</div>
+          <p>Focus on confidence-building, not just competition</p>
+        </div>
+        <div class="why-card reveal-up delay-3" id="wc-3">
+          <div class="why-check">&#10003;</div>
+          <p>Transparent and credible organization with clear standards</p>
+        </div>
+        <div class="why-card reveal-up delay-4" id="wc-4">
+          <div class="why-check">&#10003;</div>
+          <p>Opportunities that prioritize learning and growth above all</p>
+        </div>
+        <div class="why-card reveal-up delay-5" id="wc-5">
+          <div class="why-check">&#10003;</div>
+          <p>A supportive and genuinely inclusive environment</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="section values-section" id="values">
+    <div class="container">
+      <div class="section-tag reveal-up">Our Core Values</div>
+      <h2 class="section-heading centered reveal-up delay-1">The principles we live by</h2>
+      <div class="values-grid">
+        <div class="value-card reveal-up delay-1" id="val-1">
+          <div class="val-glyph">A</div>
+          <h4>Accessibility</h4>
+          <p>Removing barriers so every young person can participate</p>
+        </div>
+        <div class="value-card reveal-up delay-2" id="val-2">
+          <div class="val-glyph">I</div>
+          <h4>Inclusivity</h4>
+          <p>A space where every background and voice is respected</p>
+        </div>
+        <div class="value-card reveal-up delay-3" id="val-3">
+          <div class="val-glyph">C</div>
+          <h4>Credibility</h4>
+          <p>Standards that delegates and institutions can trust</p>
+        </div>
+        <div class="value-card reveal-up delay-4" id="val-4">
+          <div class="val-glyph">G</div>
+          <h4>Growth</h4>
+          <p>Every interaction is a step toward becoming more</p>
+        </div>
+        <div class="value-card reveal-up delay-5" id="val-5">
+          <div class="val-glyph">L</div>
+          <h4>Leadership</h4>
+          <p>Developing the next generation of global thinkers</p>
+        </div>
+        <div class="value-card reveal-up delay-1" id="val-6">
+          <div class="val-glyph">I</div>
+          <h4>Integrity</h4>
+          <p>Honesty and fairness in everything we do</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-tag reveal-up">What Delegates Say</div>
+      <h2 class="section-heading centered reveal-up delay-1">Words from the community</h2>
+      <div class="testimonials-slider reveal-up delay-2" id="testimonials-slider">
+        <div class="test-track" id="test-track">
+          <div class="testimonial-card" id="tc-1">
+            <div class="test-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="test-quote">"An incredibly welcoming platform for first-time delegates. I walked in nervous and left feeling like I could take on the world."</p>
+            <div class="test-author">
+              <div class="test-avatar">D1</div>
+              <div>
+                <span class="test-name">Delegate, Pilot Edition</span>
+                <span class="test-role">Pathum MUN 2026</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card" id="tc-2">
+            <div class="test-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="test-quote">"A well-organized conference with a strong focus on learning. The secretariat was professional and genuinely invested in every delegate."</p>
+            <div class="test-author">
+              <div class="test-avatar">D2</div>
+              <div>
+                <span class="test-name">Delegate, Pilot Edition</span>
+                <span class="test-role">Pathum MUN 2026</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card" id="tc-3">
+            <div class="test-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="test-quote">"The structure and quality of Pathum MUN stood out. This is the kind of conference that actually helps you grow, not just compete."</p>
+            <div class="test-author">
+              <div class="test-avatar">D3</div>
+              <div>
+                <span class="test-name">Delegate, Pilot Edition</span>
+                <span class="test-role">Pathum MUN 2026</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-controls">
+          <button class="slider-btn" id="slider-prev" aria-label="Previous testimonial">&#8592;</button>
+          <div class="slider-dots" id="slider-dots">
+            <button class="slider-dot active" data-idx="0" aria-label="Testimonial 1"></button>
+            <button class="slider-dot" data-idx="1" aria-label="Testimonial 2"></button>
+            <button class="slider-dot" data-idx="2" aria-label="Testimonial 3"></button>
+          </div>
+          <button class="slider-btn" id="slider-next" aria-label="Next testimonial">&#8594;</button>
+        </div>
+      </div>
+
+      <div class="video-placeholder reveal-up delay-3">
+        <div class="video-placeholder-inner" id="video-embed-area">
+          <div class="video-play-icon" aria-hidden="true">
+            <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><circle cx="30" cy="30" r="28" fill="rgba(212,160,23,0.15)" stroke="rgba(212,160,23,0.5)" stroke-width="2"/><polygon points="24,18 46,30 24,42" fill="#D4A017"/></svg>
+          </div>
+          <p>Video testimonials coming soon</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHATS NEXT -->
+  <section class="section next-section" id="next">
+    <div class="container">
+      <div class="section-tag reveal-up">What's Next</div>
+      <h2 class="section-heading centered reveal-up delay-1">The journey continues</h2>
+      <div class="next-content reveal-up delay-2">
+        <div class="next-pulse" aria-hidden="true">
+          <div class="pulse-ring pr-1"></div>
+          <div class="pulse-ring pr-2"></div>
+          <div class="pulse-ring pr-3"></div>
+          <div class="pulse-core"></div>
+        </div>
+        <p class="next-text">We are continuously expanding our platform with new initiatives, including workshops, competitions, and policy-driven discussions aimed at empowering youth voices.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="section cta-section" id="cta">
+    <div class="cta-glow" aria-hidden="true"></div>
+    <div class="container">
+      <h2 class="cta-heading reveal-up">Join Pathum Youth Forum</h2>
+      <p class="cta-sub reveal-up delay-1">Be part of a growing community of young leaders shaping the future through diplomacy and dialogue.</p>
+      <div class="cta-actions reveal-up delay-2">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSecgBXCqPq97auNs6keFWHaC-V4flNeQWOjhZLrCOcxf13GQw/viewform" target="_blank" rel="noopener" class="btn btn-primary btn-lg" id="cta-delegate-btn">Register for Pathum MUN</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSecgBXCqPq97auNs6keFWHaC-V4flNeQWOjhZLrCOcxf13GQw/viewform" target="_blank" rel="noopener" class="btn btn-gold btn-lg" id="cta-become-btn">Become a Delegate</a>
+        <a href="mailto:pathumyouthforum@gmail.com" class="btn btn-outline btn-lg" id="cta-partner-btn">Partner With Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logo.png" alt="Pathum Youth Forum" class="footer-logo" />
+          <p class="footer-tagline">Redefining Youth Diplomacy</p>
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/pathumyouthforum?igsh=cnJ4cWxsZzhmbmRr" target="_blank" rel="noopener" class="social-link" id="instagram-link" aria-label="Pathum Youth Forum on Instagram">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg>
+              Instagram
+            </a>
+          </div>
+        </div>
+        <div class="footer-links-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#vision">Vision &amp; Mission</a></li>
+            <li><a href="#structure">What We Do</a></li>
+            <li><a href="#mun2026">Pathum MUN 2026</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4>Get Involved</h4>
+          <ul>
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSecgBXCqPq97auNs6keFWHaC-V4flNeQWOjhZLrCOcxf13GQw/viewform" target="_blank" rel="noopener">Delegate Registration</a></li>
+            <li><a href="https://forms.gle/uZxjMKKMbVCxU6fe9" target="_blank" rel="noopener">Secretariat Recruitment</a></li>
+            <li><a href="#cta">Partner With Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4>Key Dates</h4>
+          <ul class="footer-dates">
+            <li><span class="fd-label">Pilot Conference</span><span>11 Jan 2026</span></li>
+            <li><span class="fd-label">Pathum MUN 2026</span><span>23&#8211;24 May 2026</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Pathum Youth Forum. All rights reserved.</p>
+        <p>Founded by Kasturi Vyawahare</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
